@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct10-async-fs-process-amarleo/issues"
   },
-  "homepage": "https://github.com/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct10-async-fs-process-amarleo#readme"
+  "homepage": "https://github.com/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct10-async-fs-process-amarleo#readme",
+  "devDependencies": {
+    "tsc-watch": "^5.0.3"
+  }
 }
