@@ -11,14 +11,30 @@
     - [Ejercicio 2](#ejercicio-2)
     - [Ejercicio 3](#ejercicio-3)
     - [Ejercicio 4](#ejercicio-4)
+  - [Conclusión](#conclusión)
 
 ## Introducción
 
+El presente informe perteneciente a la décima práctidca de la asignatura de Desarrollo de Sistemas Informáticos, tiene como principales objetivos hacer uso de las APIs proporcionadas por Node.js con la intención de interactuar con el sistema de ficheros, así como para la creación de procesos.
+
 ## Tareas Previas
+
+Como tareas previas se han leído y comprendido la documentación proporcionada en el enunciado:
+
+- [API de callbacks Node.js para interacturar con el sistema de ficheros](https://nodejs.org/dist/latest-v18.x/docs/api/fs.html#callback-api)
+- [API asíncrona de Node.js para crear procesos](https://nodejs.org/dist/latest-v18.x/docs/api/child_process.html#asynchronous-process-creation)
 
 ## Ejercicios
 
+A continuación, se comenta el desarrollo llevado a cabo para cada uno de los ejercicios de esta práctica:
+
 ### Ejercicio 1
+
+Antes de comenzar con la traza se intentará definir algunas funciones y objetos del código.
+
+- **Access**: Se trata de una función la cuál permite comprobar los permisos que tiene un usuario sobre el fichero o el directorio especificado en la dirección pasada por parámetro. En la documentación de node JS aportada se recomienda no hacer uso de **fs.access()** antes de realizar una llamada a **fs.open()**, **fs.readFile()** o **fs.writeFile()**, dado que provoca una condición de carrera.
+
+- **Constants**: 
 
 ### Ejercicio 2
 
@@ -26,3 +42,4 @@
 
 ### Ejercicio 4
 
+## Conclusión
