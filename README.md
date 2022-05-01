@@ -34,7 +34,17 @@ Antes de comenzar con la traza se intentará definir algunas funciones y objetos
 
 - **Access**: Se trata de una función la cuál permite comprobar los permisos que tiene un usuario sobre el fichero o el directorio especificado en la dirección pasada por parámetro. En la documentación de node JS aportada se recomienda no hacer uso de **fs.access()** antes de realizar una llamada a **fs.open()**, **fs.readFile()** o **fs.writeFile()**, dado que provoca una condición de carrera.
 
-- **Constants**: 
+- **Constants**: Se trata de un objeto, cuyas propiedades describen ciertos indicadores que se usan con FileSystem de Nodejs. Existen varios tipos de constantes, como por ejemplo:
+
+| Constant |                        Descripción                         |
+| :------: | :--------------------------------------------------------: |
+|   F_OK   | Indica la visibilidad del fichero en el proceso de llamada |
+|   R_OK   |     Indica si el fichero se puede leer por el proceso.     |
+|   W_OK   |   Indica si el fichero se puede escribir por el proceso.   |
+
+A continuación, se comentará una traza de ejecución para el programa propuesto en este ejercicio, donde se indicará los pasos por los que pasan los diferentes procesos.
+
+Durante la ejecución de este código pueden ocurrir diferentes situaciones. En concreto se encuentran las siguientes:
 
 ### Ejercicio 2
 
